@@ -5,10 +5,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 62px;
 }
 
 .navh1 {
     color: rgb(248, 241, 241);
     font-size: 40px;
+}
+
+.navlist {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+.navlist li {
+    font-size: 20px;
+    padding: 100px;
 }
