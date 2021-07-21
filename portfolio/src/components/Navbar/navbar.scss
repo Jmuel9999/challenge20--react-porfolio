@@ -15,7 +15,6 @@
 
 .navlist {
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     padding-right: 50px;
@@ -24,4 +23,10 @@
 .navlist li {
     font-size: 20px;
     padding: 100px;
+}
+
+/* highlights the current tab selected */
+.navlist li a.current {
+    color: #ffffff;
+    background: #f1d74c;
 }
