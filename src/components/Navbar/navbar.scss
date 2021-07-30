@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 .navbar {
     background-color: #519aea;
@@ -26,7 +31,7 @@
 
 .navlist li {
     font-size: 20px;
-    padding: 100px;
+    padding: 30px;
 }
 
 /* highlights the current tab selected */
