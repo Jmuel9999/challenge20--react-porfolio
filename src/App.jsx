@@ -4,8 +4,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 
 function App() {
 
