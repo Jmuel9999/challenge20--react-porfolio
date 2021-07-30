@@ -4,35 +4,26 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function App() {
-  const [about, setAbout] = useState(true);
-  const [portfolio, setPortfolio] = useState(false);
-  const [contact, setContact] = useState(false);
 
   return (
-    <main className="app">
-      <Navbar about={about} setAbout={setAbout} portfolio={portfolio} setPortfolio={setPortfolio} contact={contact} setContact={setContact}></Navbar>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
-        {about ? (
-          <>
-            <About></About>
-          </>
-        ) 
-        : portfolio ? (
-          <>
-            <Portfolio></Portfolio>
-          </>
-        ) 
-        : (
-          <>
-            <Contact></Contact>
-          </>
-        )}
+        <main className="flex">
+          <Navbar></Navbar>
+            <Switch>
+              <Route exact path="/" component={About}/>
+              <Route exact path="/Contact" component={Contact}/>
+              <Route exact path="/Portfolio" component={Portfolio}/>
+              <Route exact path="/Resume" component={Resume}/>
+            </Switch>
+          <Footer></Footer>
+        </main>
       </div>
-      <Footer></Footer>
-    </main>
+    </Router>
   );
 }
 
