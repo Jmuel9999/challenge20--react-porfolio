@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="contactContainer">
                 
                 <form className="contactForm">
-                    <p>Reach out to me!</p>
+                    <h1>Reach out to me!</h1>
                     <div className="inputField">
                         <label className="inputName" for="name">Name:</label>
                         <input type="text" id="name" placeholder="Enter your name here."></input>
