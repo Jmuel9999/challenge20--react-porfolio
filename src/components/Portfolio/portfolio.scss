@@ -1,0 +1,23 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectDiv {
+    padding: 121px;
+    margin-left: 97px;
+    border: 1vh;
+    border-color: black;
+    border-width: 3px;
+}
+
+.h1 {
+    padding-top: 25px;
+}
+
+.workDivs {
+    display: flex;
+    flex-wrap: wrap;
+}
